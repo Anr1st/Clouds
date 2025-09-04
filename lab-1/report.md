@@ -16,23 +16,46 @@
 ## Что по пет проектам? 
 Допустим, хочется блог о кулинарии (1 пет проект) и блог о фотографиях (2 пет проект).
 ### Создаем папки для сайтов
-```
-    sudo mkdir -p /var/www/cooking
-    sudo mkdir -p /var/www/photo
-```
-## Первая ошибка : D
 Чтобы после всей проделанной работы всё улетело на проверку преподавателю, надо организовать структуру проекта в папке, в нашем случае в папке Clouds/lab-1:
 ```
-    # Создаем правильную структуру папок
+    # Создаем структуру
     mkdir -p nginx-configs websites/cooking websites/photo scripts
-
 ```
 Что получилось? 
-![1](images|1.png)
-images # директория для пруфов
-nginx-configs # конфиги для nginx
-report.md # наш отчет
-scripts # скрипты установки
-websites/cooking и websites/photo # коды наших сайтов
+images # директория для пруфов  
+nginx-configs # конфиги для nginx  
+report.md # наш отчет  
+scripts # скрипты установки  
+websites/cooking и websites/photo # коды наших сайтов  
+### Начнем с сайта о кулинарии. Создаем файл index.html.
+```
+    touch websites/cooking/index.html
+```
+Теперь пишем код:
+```
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Кулинарные рецепты со всего света</title>
+    <style>
+        body { 
+            font-family: Arial, sans-serif;
+            margin: 40px;
+            background-color: #98FB98;
+        }
+        h1 { color: #800080; }
+    </style>
+</head>
+<body>
+    <h1>Рецепты вокруг света</h1>
+    <p>Добро пожаловать в мир кулинарии со всех уголков нашей планеты!</p>
+    <p>Здесь Вы сможете найти рецепты на любой вкус и цвет.</p>
+    <p><a href="/static/recipe.txt">Посмотреть рецепт пиццы</a></p>
+</body>
+</html>
+```
+
+
+
 
 

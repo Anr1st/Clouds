@@ -241,4 +241,4 @@ server {
     }
 }
 ```
-![Конец](../images|photo_2025-09-09_18-07-23.jpg)
+![Конец](https://github.com/Anr1st/Clouds/blob/main/lab-1/images/photo_2025-09-09_18-07-23.jpg)

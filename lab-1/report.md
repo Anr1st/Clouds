@@ -1,88 +1,86 @@
 # Отчет по Лабораторной работе №1
 
 ## Что происходит?
-Наша цель - настроить веб-сервер Nginx, который будет перенаправлять с протокола HTTP на HTTPS для безопасности, обслуживать 2 пет-проекта на  сервере с виртуальными хостами и использовать alias для псевдонимов путей. 
+Наша цель - настроить веб-сервер Nginx для обслуживания двух пет-проектов с использованием HTTPS, перенаправлением с HTTP на HTTPS, виртуальными хостами и псевдонимами путей (alias). 
 
-## Упростим алгоритм работы.
-1. Ставим Nginx
-2. Создаем папки с HTML-файлами (наши пет-проекты)
-3. Настраиваем конфиги для виртуальных хостов
-4. Создаем самоподписанные сертификаты (позже подумаем, как обойти руганье от браузера)
-5. Тестируем
+## Конфигурация сервера
+ОС: Ubuntu  
+Версия Nginx: 1.24.0  
+Инструмент для сертификатов: mkcert v1.4.4.  
+Домены:  
+    cooking.test (первый проект).
+    photo.test (второй проект).
 ![полделасделано](https://github.com/Anr1st/Clouds/blob/main/lab-1/images/photo_2025-09-09_18-07-29.jpg)
-## Что по пет-проектам? 
-Допустим, хочется блог о кулинарии (первый пет проект) и блог о фотографах (второй пет проект).  
-1. cooking.local — сайт с кулинарными рецептами. Главная страница index.html и есть файл с рецептом, который лежит по пути /recipes/recipe.txt.  
-2. photo.local — сайт  с биографиями фотографов. Главная страница index.html и есть файл с биографией, который лежит по пути /gallery/bio.txt.  
 
-### Начнем с сайтов
-Навряд ли Вас интересует листинг кода для сайта на html, ведь работа не об этом, так что мы приложим далее только скрины. Также создадим отдельный txt файл с рецептом кабачковой икры, куда нас будет перекидывать ссылка на главной страницы сайта, этот файл нам нужен для работы с alias. Аналогично со вторым сайтом и его txt файлом с биографией фотографа Ирвина Пенн.
+## Настройки 
+Для начала создадим структуру директорий для каждого проекта:   
+/var/www/cooking/          # Корневая директория для cooking.test
+├── index.html             # Главная страница
+├── recipes/               # Поддиректория для alias
+│   └── index.html         # Страница разделов
+└── recipe.txt             # Пример файла
 
-## Настало время конфиг 
+/var/www/photo/            # Корневая директория для photo.test
+├── index.html
+├── gallery/               # Поддиректория для alias
+│   └── index.html
+└── bio.txt  
+
+Далее созданы конфигурационные файлы в /etc/nginx/sites-available/:  
+    cooking.conf: Настройки для cooking.test.  
+    photo.conf: Настройки для photo.test.  
+  
+Ключевые моменты:  
+1. Перенаправление с HTTP на HTTPS    
 ```
-    touch nginx-configs/cooking.conf nginx-configs/photo.conf
-```
-Листинг кода с комментариями: 
-```
-# здесь мы перенаправляем HTTP на HTTPS
 server {
-    listen 80; # слушаем порт 80 (HTTP)
-    server_name cooking.local; #только для домена нашего кулинарного сайта
-    return 301 https://$server_name$request_uri; # с кодом 301 ("Moved Permanently") браузер должен нас слушаться и перенаправлять нашу ссылку с HTTP на HTTPS, если пользователь введет http://cooking.local
+    listen 80;
+    server_name cooking.test www.cooking.test;
+    return 301 https://$server_name$request_uri;  # Редирект на HTTPS
 }
-
-# HTTPS сервер
+```
+2. HTTPS  
+```
 server {
-    listen 443 ssl; # теперь слушаем 443 порт и включаем  SSL
-    server_name cooking.local;
-    
-    ssl_certificate /etc/ssl/certs/cooking.crt; # здесь указываем пути к нашему сертификату и ключу
-    ssl_certificate_key /etc/ssl/certs/cooking.key;
-    
-    root /var/www/cooking; # корневая директория, где находятся все файлы нашего сайта
+    listen 443 ssl;
+    server_name cooking.test www.cooking.test;
+    ssl_certificate /etc/ssl/certs/cooking.crt;    # Путь к сертификату
+    ssl_certificate_key /etc/ssl/certs/cooking.key; # Путь к ключу
+    root /var/www/cooking;                          # Корневая директория
     index index.html;
-    
-    ssl_protocols TLSv1.2 TLSv1.3; # указываем современные версии протоколов TLS, ибо так безопаснее
-    
-    access_log /var/log/nginx/cooking_access.log; # здесь журналы логов и ошибок
-    error_log /var/log/nginx/cooking_error.log;
-    
-    charset utf-8; # так как наш текст на сайте на русском без этого он будет отображаться некорректно 
-    
-    # настраиваем alias
-    location ^~ /recipes/ {
-        alias /var/www/cooking/; # nginx будет искать файлы, начинающиеся с /recipes/ прямо в папке /var/www/cooking/, то есть запрос /recipes/recipe.txt превратится в /var/www/cooking/recipe.txt
-    }
-    
-    location / { # обработка остальных запросов, если ничего не было найден - ошибка 404
-        try_files $uri $uri/ =404;
-    }
-    
-    location ~* \.txt$ { еще раз работаем с текстом и его кодировкой, чтобы все было правильно и красиво
-        charset utf-8;
-        default_type text/plain;
-    }
+    # Настройки SSL
+    ssl_protocols TLSv1.2 TLSv1.3;
+    ssl_ciphers ECDHE-ECDSA-AES128-GCM-SHA256:...;
+    ssl_prefer_server_ciphers off;
 }
 ```
-Конфиг для второго сайта аналогичен, просто заменяем cooking на photo, а путь /recipes/ на /gallery/.  
+3. Alias
+```
+location /recipes/ {
+    alias /var/www/cooking/recipes/;  # Псевдоним пути
+    try_files $uri $uri/ =404;
+}
+```
+4. Сертификаты
+```
+mkcert cooking.test www.cooking.test photo.test www.photo.test
+```
+5. DNS. Домены добавлены в файл /etc/hosts
+```
+127.0.0.1 cooking.test www.cooking.test photo.test www.photo.test
+```
+6. Активация конфигов
+```
+cooking.conf -> /etc/nginx/sites-available/cooking.conf
+photo.conf -> /etc/nginx/sites-available/photo.conf
+```
 Было ли это тяжело? Да, было
-![гении](https://github.com/Anr1st/Clouds/blob/main/lab-1/images/photo_2025-09-09_18-07-19.jpg)
-
-### Немножка лень
-Мы решили написать скрипт, чтобы он сделал все сам за нас. Что он будет делать: 
-1. Обновит список пакетов и установит nginx
-2. Создаст корневые директории для каждого сайта
-3. Скопирует локальные файлы на сервер
-4. Сгенерирует самоподписанные сертификаты и ключи
-5. Пропишет доменные имена в системный файл `hosts`
-6. Проверит синтаксис конфигов на ошибки
-7. Перезапустит nginx
-8. И самое важное - даст ссылки на сайты, чтобы было быстрее переходить
 ![глупенькость](https://github.com/Anr1st/Clouds/blob/main/lab-1/images/photo_2025-09-09_18-07-21.jpg)
 
 ## САМОЕ СТРАШНОЕ - ТЕСТИРУЕМ
-
 ![тест](https://github.com/Anr1st/Clouds/blob/main/lab-1/images/photo_2025-09-09_18-07-27.jpg)
+
+
 
 ## ВСЁ
 ![Конец](https://github.com/Anr1st/Clouds/blob/main/lab-1/images/photo_2025-09-09_18-07-23.jpg)

@@ -81,7 +81,16 @@ photo.conf -> /etc/nginx/sites-available/photo.conf
 ## САМОЕ СТРАШНОЕ - ТЕСТИРУЕМ
 ![тест](https://github.com/Anr1st/Clouds/blob/main/lab-1/images/photo_2025-09-09_18-07-27.jpg)
 
+Первый сайт:  
+![1]https://github.com/Anr1st/Clouds/blob/main/lab-1/proof/%D0%92%D1%81%D1%82%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%BD%D0%BE%D0%B5%20%D0%B8%D0%B7%D0%BE%D0%B1%D1%80%D0%B0%D0%B6%D0%B5%D0%BD%D0%B8%D0%B5.png
+![2]https://github.com/Anr1st/Clouds/blob/main/lab-1/proof/%D0%92%D1%81%D1%82%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%BD%D0%BE%D0%B5%20%D0%B8%D0%B7%D0%BE%D0%B1%D1%80%D0%B0%D0%B6%D0%B5%D0%BD%D0%B8%D0%B5%20(2).png
+![3]https://github.com/Anr1st/Clouds/blob/main/lab-1/proof/%D0%92%D1%81%D1%82%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%BD%D0%BE%D0%B5%20%D0%B8%D0%B7%D0%BE%D0%B1%D1%80%D0%B0%D0%B6%D0%B5%D0%BD%D0%B8%D0%B5%20(5).png
+![4]https://github.com/Anr1st/Clouds/blob/main/lab-1/proof/%D0%92%D1%81%D1%82%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%BD%D0%BE%D0%B5%20%D0%B8%D0%B7%D0%BE%D0%B1%D1%80%D0%B0%D0%B6%D0%B5%D0%BD%D0%B8%D0%B5%20(6).png  
+Второй сайт:
+![5]https://github.com/Anr1st/Clouds/blob/main/lab-1/proof/%D0%92%D1%81%D1%82%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%BD%D0%BE%D0%B5%20%D0%B8%D0%B7%D0%BE%D0%B1%D1%80%D0%B0%D0%B6%D0%B5%D0%BD%D0%B8%D0%B5%20(3).png
+![6]https://github.com/Anr1st/Clouds/blob/main/lab-1/proof/%D0%92%D1%81%D1%82%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%BD%D0%BE%D0%B5%20%D0%B8%D0%B7%D0%BE%D0%B1%D1%80%D0%B0%D0%B6%D0%B5%D0%BD%D0%B8%D0%B5%20(4).png
+![7]https://github.com/Anr1st/Clouds/blob/main/lab-1/proof/%D0%92%D1%81%D1%82%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%BD%D0%BE%D0%B5%20%D0%B8%D0%B7%D0%BE%D0%B1%D1%80%D0%B0%D0%B6%D0%B5%D0%BD%D0%B8%D0%B5%20(7).png
+![8]https://github.com/Anr1st/Clouds/blob/main/lab-1/proof/%D0%92%D1%81%D1%82%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%BD%D0%BE%D0%B5%20%D0%B8%D0%B7%D0%BE%D0%B1%D1%80%D0%B0%D0%B6%D0%B5%D0%BD%D0%B8%D0%B5%20(8).png
 
-
-## ВСЁ
+## ГОТОВО
 ![Конец](https://github.com/Anr1st/Clouds/blob/main/lab-1/images/photo_2025-09-09_18-07-23.jpg)

@@ -99,5 +99,9 @@ photo.conf -> /etc/nginx/sites-available/photo.conf
 
 ![8](https://github.com/Anr1st/Clouds/blob/main/lab-1/proof/8.png)
 
+![9](https://github.com/Anr1st/Clouds/blob/main/lab-1/proof/9.png)
+
+![10](https://github.com/Anr1st/Clouds/blob/main/lab-1/proof/10.png)
+
 ## ГОТОВО
 ![Конец](https://github.com/Anr1st/Clouds/blob/main/lab-1/images/photo_2025-09-09_18-07-23.jpg)

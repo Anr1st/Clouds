@@ -82,22 +82,22 @@ photo.conf -> /etc/nginx/sites-available/photo.conf
 ![тест](https://github.com/Anr1st/Clouds/blob/main/lab-1/images/photo_2025-09-09_18-07-27.jpg)
 
 Первый сайт:  
-![1]https://github.com/Anr1st/Clouds/blob/main/lab-1/proof/1.png
+![1](https://github.com/Anr1st/Clouds/blob/main/lab-1/proof/1.png)
 
-![2]https://github.com/Anr1st/Clouds/blob/main/lab-1/proof/2.png
+![2](https://github.com/Anr1st/Clouds/blob/main/lab-1/proof/2.png)
 
-![3]https://github.com/Anr1st/Clouds/blob/main/lab-1/proof/3.png
+![3](https://github.com/Anr1st/Clouds/blob/main/lab-1/proof/3.png)
 
-![4]https://github.com/Anr1st/Clouds/blob/main/lab-1/proof/4.png  
+![4](https://github.com/Anr1st/Clouds/blob/main/lab-1/proof/4.png)   
 
 Второй сайт:  
-![5]https://github.com/Anr1st/Clouds/blob/main/lab-1/proof/5.png
+![5](https://github.com/Anr1st/Clouds/blob/main/lab-1/proof/5.png)
 
-![6]https://github.com/Anr1st/Clouds/blob/main/lab-1/proof/6.png
+![6](https://github.com/Anr1st/Clouds/blob/main/lab-1/proof/6.png)
 
-![7]https://github.com/Anr1st/Clouds/blob/main/lab-1/proof/7.png
+![7](https://github.com/Anr1st/Clouds/blob/main/lab-1/proof/7.png)
 
-![8]https://github.com/Anr1st/Clouds/blob/main/lab-1/proof/8.png
+![8](https://github.com/Anr1st/Clouds/blob/main/lab-1/proof/8.png)
 
 ## ГОТОВО
 ![Конец](https://github.com/Anr1st/Clouds/blob/main/lab-1/images/photo_2025-09-09_18-07-23.jpg)

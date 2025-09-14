@@ -13,7 +13,8 @@
 ![полделасделано](https://github.com/Anr1st/Clouds/blob/main/lab-1/images/photo_2025-09-09_18-07-29.jpg)
 
 ## Настройки 
-Для начала создадим структуру директорий для каждого проекта:   
+Для начала создадим структуру директорий для каждого проекта:  
+```
 /var/www/cooking/          # Корневая директория для cooking.test
 ├── index.html             # Главная страница
 ├── recipes/               # Поддиректория для alias
@@ -25,7 +26,7 @@
 ├── gallery/               # Поддиректория для alias
 │   └── index.html
 └── bio.txt  
-
+```
 Далее созданы конфигурационные файлы в /etc/nginx/sites-available/:  
     cooking.conf: Настройки для cooking.test.  
     photo.conf: Настройки для photo.test.  
@@ -74,7 +75,7 @@ mkcert cooking.test www.cooking.test photo.test www.photo.test
 cooking.conf -> /etc/nginx/sites-available/cooking.conf
 photo.conf -> /etc/nginx/sites-available/photo.conf
 ```
-Было ли это тяжело? Да, было
+Было ли это тяжело? Да, было  
 ![глупенькость](https://github.com/Anr1st/Clouds/blob/main/lab-1/images/photo_2025-09-09_18-07-21.jpg)
 
 ## САМОЕ СТРАШНОЕ - ТЕСТИРУЕМ

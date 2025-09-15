@@ -53,6 +53,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends curl \
 ```USER appuser```
 
 ![cat](https://github.com/Anr1st/Clouds/blob/main/lab-2/photos/cat%20krutoi.jpg)
+
 *грозный дядька злоумышленник*
 
 ## COPY
@@ -78,6 +79,7 @@ COPY app.py .
 
 
 ![Листинг Dockerfile.bad](https://github.com/Anr1st/Clouds/blob/main/lab-2/photos/1.1.png)
+
 *Листинг Dockerfile.bad*
 
 ![Время работы Dockerfile.bad](https://github.com/Anr1st/Clouds/blob/main/lab-2/photos/1.png)

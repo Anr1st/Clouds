@@ -4,7 +4,7 @@
 
 Рубрика: "объясняем на котятах"🐈
 
-![cat](/photos/cat2.jpg)
+![cat](https://github.com/Anr1st/Clouds/blob/main/lab-2/photos/cat2.jpg)
 
 ## Latest
 ❌Чтож ж, начнем, пожалуй, c очевидного:
@@ -51,7 +51,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends curl \
 
 ```USER appuser```
 
-![cat](/photos/cat%20krutoi.jpg)
+![cat](https://github.com/Anr1st/Clouds/blob/main/lab-2/photos/cat%20krutoi.jpg)
 *грозный дядька злоумышленник*
 
 ## COPY
@@ -76,16 +76,16 @@ COPY app.py .
 
 
 
-![Листинг Dockerfile.bad](/photos/1.1.png)
+![Листинг Dockerfile.bad](https://github.com/Anr1st/Clouds/blob/main/lab-2/photos/1.1.png)
 *Листинг Dockerfile.bad*
 
-![Время работы Dockerfile.bad](/photos/1.png)
+![Время работы Dockerfile.bad](https://github.com/Anr1st/Clouds/blob/main/lab-2/photos/1.png)
 *Время работы Dockerfile.bad*
 
-![Листинг Dockerfile.good](/photos/2.1.png)
+![Листинг Dockerfile.good](https://github.com/Anr1st/Clouds/blob/main/lab-2/photos/2.1.png)
 *Листинг Dockerfile.good*
 
-![Время работы Dockerfile.good](/photos/2.png)
+![Время работы Dockerfile.good](https://github.com/Anr1st/Clouds/blob/main/lab-2/photos/2.png)
 *Время работы Dockerfile.good*
 
 ## Две плохих практики
@@ -95,4 +95,4 @@ COPY app.py .
 2. Сетевые конфликты: при создании сетей для контейнеров могут возникать конфликты имен и портов. Обязательно проверяйте, что порты и сети не пересекаются с другими контейнерами и сервисами на вашей машине. (Спасибо курсу информатики в первом семе🛜)
 
 # Спасибо за внимание! 
-![cat](/photos/cat1.1.jpg)
+![cat](https://github.com/Anr1st/Clouds/blob/main/lab-2/photos/cat1.1.jpg)

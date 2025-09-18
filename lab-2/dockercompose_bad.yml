@@ -1,0 +1,9 @@
+services:
+  web:
+    image: nginx:latest 
+    container_name: web 
+    ports:
+      - "8080:80"
+  app:
+  image: myapp:latest 
+  container_name: app

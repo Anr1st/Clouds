@@ -1,0 +1,21 @@
+services:
+  web:
+    image: nginx:1.23.3 
+    container_name: web 
+    ports:
+      - "8080:80"
+    networks:
+      - web_network
+
+  app:
+    image: myapp:1.0.0 
+    container_name: app 
+    networks:
+      - app_network
+
+
+networks:
+  web_network:
+    driver: bridge 
+  app_network:
+    driver: bridge

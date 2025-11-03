@@ -4,7 +4,7 @@
 
 Рубрика: объясняем на котятах🐈
 
-![cat](../kotyata/кот4.jpg)
+![cat](kotyata/cat4.jpg)
 
 # Часть 1
 
@@ -99,7 +99,7 @@ jobs:
       ${{ runner.os }}-node-
 ```
 
-![cat](../kotyata/котбежит.jpg)
+![cat](kotyata/catrun.jpg)
 
 ### 2. Установка зависимостей
 
@@ -126,7 +126,7 @@ jobs:
     name: build-artifacts
     path: ./dist
 ```
-![cat](../kotyata/которет.jpg)
+![cat](kotyata/catscream.jpg)
 
 ### 4. Безопасное использование секретов для деплоя
 
@@ -141,7 +141,7 @@ jobs:
     DEPLOY_SECRET: ${{ secrets.DEPLOY_SECRET }}
 ```
 
-![cat](../kotyata/кот2.jpg) *злоумышенник*
+![cat](kotyata/cat2.jpg) *злоумышенник*
 
 ### 5. Зависимости между стадиями
 
@@ -164,14 +164,14 @@ jobs:
 
 ### Пайплайн "плохого" CI/CD:
 
-![omg](../kotyata/baaad.png)
+![omg](kotyata/baaad.png)
 
 ### Пайплайн "хорошего" CI/CD:
 
-![omg](../kotyata/goooood.png)
+![omg](kotyata/goooood.png)
 
 
 # Часть 2
 Часть 2 см. в отдельном отчете в папке `solutions` Case №5!
 
-![cat](../kotyata/кот1.jpg)
+![cat](kotyata/cat1.jpg)

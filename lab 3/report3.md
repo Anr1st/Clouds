@@ -126,7 +126,7 @@ jobs:
     name: build-artifacts
     path: ./dist
 ```
-![cat](kotyata/catscream.jpg)
+![cat](kotyata/catsream.jpg)
 
 ### 4. Безопасное использование секретов для деплоя
 

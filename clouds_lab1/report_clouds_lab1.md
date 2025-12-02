@@ -15,7 +15,7 @@
 3. SaaS - ПО как услуга.
 (есть также узкоспециализированные)  
 
-![](https://github.com/Anr1st/Clouds/tree/main/clouds_lab1/clouds.jpg)  
+![](https://raw.githubusercontent.com/Anr1st/Clouds/main/clouds_lab1/clouds.jpg)  
 
 Что требуется в работе?  
 - Классифицировать потребляемые ресурсы по:  
@@ -34,7 +34,7 @@ IT Tower | Service Family | Service Type | Service Sub Type | Service Usage Type
 Compute  | Compute        | Amazon EKS   | Fargate          | vCPU hours  
 Категория| Подкатегория   | Сервис AWS   | Вариант сервиса  | За что платим     
 
-![](https://github.com/Anr1st/Clouds/tree/main/clouds_lab1/cat1.jpg)  
+![](https://raw.githubusercontent.com/Anr1st/Clouds/main/clouds_lab1/cat1.jpg)  
 
 ## Практическая часть
 1. Скачиваем все файлы из папки "AWS";
@@ -50,4 +50,4 @@ Compute  | Compute        | Amazon EKS   | Fargate          | vCPU hours
 ## Заключение
 Лабораторная работа выполнена. Все предоставленные данные классифицированы, создана сервисная модель, готовая для анализа затрат и проведения финансового анализа использования облачных ресурсов AWS.
 
-![](https://github.com/Anr1st/Clouds/tree/main/clouds_lab1/cat2.jpg)
+![](https://raw.githubusercontent.com/Anr1st/Clouds/main/clouds_lab1/cat2.jpg)

@@ -49,23 +49,21 @@ Compute  | Compute        | Amazon EKS   | Fargate          | vCPU hours
 5. Заполняем иерархию.
 
 ### Сервисы
-Вычислительные: Amazon Elastic Compute Cloud (EC2), AWS Lambda, Amazon EKS, Amazon Lightsail  
+Вычислительные: Amazon Elastic Compute Cloud (EC2), AWS Lambda, Amazon Lightsail  
 Российские аналоги: Яндекс Облако, VK Cloud, СберОблако  
-Хранилища: Amazon S3, Amazon EFS, Amazon FSx, Amazon CloudFront   
+Хранилища: Amazon S3, Amazon EFS  
 Российские аналоги: Яндекс Облако, VK Cloud, Selectel  
-Базы данных: Amazon RDS, Amazon DynamoDB, Amazon ElastiCache, Amazon DocumentDB  
+Базы данных: Amazon DynamoDB, Amazon ElastiCache, Amazon DocumentDB  
 Российские аналоги: Яндекс Облако, VK Cloud, Selectel  
-Сеть: Amazon VPC, Amazon Route 53, AWS Direct Connect  
+Сеть: Amazon VPC, Amazon Route 53 
 Российские аналоги: Яндекс Облако, VK Cloud, MTS Cloud  
-ИИ и ML: Amazon SageMaker, Amazon Rekognition, Amazon Comprehend, Amazon Lex  
-Российские аналоги: Яндекс Облако, Сбер AI  
-Безопасность:| AWS KMS, Amazon Inspector, Amazon GuardDuty  
+ИИ и ML: Amazon Machine Learning, Amazon Polly, Amazon Translate, Amazon Transcribe, Amazon Personalize
+Российские аналоги: Сбер AI  
+Безопасность: Amazon Detective, Amazon Inspector, Amazon GuardDuty  
 Российские аналоги: Яндекс Облако, UserGate  
-Аналитика: Amazon Redshift, Amazon Athena, Amazon Kinesis  
+Аналитика: Amazon Redshift, Amazon Elasticsearch Service, Amazon Kinesis  
 Российские аналоги: Яндекс Облако, VK Cloud  
 Инструменты разработки: AWS CodePipeline, AWS CodeBuild, AWS X-Ray  
-Российские аналоги: Яндекс Облако  
-Менеджмент и мониторинг: Amazon CloudWatch, AWS Backup, AWS Budgets  
 Российские аналоги: Яндекс Облако  
 
 ## Заключение

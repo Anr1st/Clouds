@@ -55,9 +55,9 @@ Compute  | Compute        | Amazon EKS   | Fargate          | vCPU hours
 Российские аналоги: Яндекс Облако, VK Cloud, Selectel  
 Базы данных: Amazon DynamoDB, Amazon ElastiCache, Amazon DocumentDB  
 Российские аналоги: Яндекс Облако, VK Cloud, Selectel  
-Сеть: Amazon VPC, Amazon Route 53 
+Сеть: Amazon VPC, Amazon Route 53  
 Российские аналоги: Яндекс Облако, VK Cloud, MTS Cloud  
-ИИ и ML: Amazon Machine Learning, Amazon Polly, Amazon Translate, Amazon Transcribe, Amazon Personalize
+ИИ и ML: Amazon Machine Learning, Amazon Polly, Amazon Translate, Amazon Transcribe, Amazon Personalize  
 Российские аналоги: Сбер AI  
 Безопасность: Amazon Detective, Amazon Inspector, Amazon GuardDuty  
 Российские аналоги: Яндекс Облако, UserGate  

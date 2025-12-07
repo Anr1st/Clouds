@@ -45,8 +45,9 @@ Compute  | Compute        | Amazon EKS   | Fargate          | vCPU hours
 1. Смотрим на Product Code - идем в документацию;
 2. Анализируем Usage Type - ищем знакомые слова и паттерны;
 3. Используем контекст;
-4. Много гуглим;
-5. Заполняем иерархию.
+4. Для столбцов IT Tower и Service Family значения выбираем из образца;
+5. Много гуглим;
+6. Заполняем иерархию.
 
 ### Сервисы
 Вычислительные: Amazon Elastic Compute Cloud (EC2), AWS Lambda, Amazon Lightsail  

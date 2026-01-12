@@ -25,22 +25,22 @@
 6. Заполняем иерархию.
 
 ### Сервисы
-Вычислительные: Azure Virtual Machines, Azure App Service, Azure Container Instances, Azure Functions, Azure Batch  
-Российские аналоги: Яндекс Облако, VK Cloud, СберОблако  
-Хранилища: Azure Blob Storage, Azure Files, Azure Disk Storage, Azure Data Lake Storage  
-Российские аналоги: Яндекс Облако, VK Cloud, Selectel  
-Базы данных: Azure SQL Database, Azure Cosmos DB, Azure Database for PostgreSQL/MySQL, Azure Cache for Redis  
-Российские аналоги: Яндекс Облако, VK Cloud, Selectel  
-Сеть: Azure Virtual Network, Azure Load Balancer, Azure Application Gateway, Azure DNS, Azure Traffic Manager, Azure VPN Gateway, Azure Bastion  
-Российские аналоги: Яндекс Облако, VK Cloud, MTS Cloud  
-ИИ и ML: Azure Machine Learning, Azure Cognitive Services, Azure Bot Service  
-Российские аналоги: Сбер AI  
-Безопасность: Azure Sentinel, Azure Key Vault, Azure Firewall  
-Российские аналоги: Яндекс Облако, UserGate  
-Аналитика: Azure Databricks, Azure HDInsight, Azure Stream Analytics, Azure Data Factory, Azure Analysis Services  
-Российские аналоги: Яндекс Облако, VK Cloud  
-Инструменты разработки: Azure DevTest Labs, Azure Container Registry  
-Российские аналоги: Яндекс Облако  
+Вычислительные: Azure Virtual Machines, Azure App Service, Azure Container Instances, Azure Functions   
+Российские аналоги: Yandex Compute Cloud, VK Cloud Solutions, Yandex Container Registry, Yandex Cloud Functions  
+Хранилища: Azure Blob Storage, Azure Files, Azure Disk Storage     
+Российские аналоги: Yandex Object Storage, Yandex Compute Cloud, Yandex Compute Cloud Disks    
+Базы данных: Azure SQL Database, Azure Cosmos DB, Azure Cache for Redis  
+Российские аналоги: Yandex Managed Service for PostgreSQL, Yandex Managed Service for YDB, Yandex Managed Service for Redis  
+Сеть: Azure Virtual Network, Azure Load Balancer, Azure Application Gateway, Azure DNS  
+Российские аналоги: Yandex Virtual Private Cloud, Yandex Network Load Balancer, Yandex Application Load Balancer, Yandex DNS    
+ИИ и ML: Azure Machine Learning  
+Российские аналоги: Cloud․ru ML Space  
+Безопасность: Azure Key Vault, Azure Firewall  
+Российские аналоги: Yandex Lockbox, Yandex DDoS Protection  
+Аналитика: Azure Databricks, Azure Stream Analytics, Azure Data Factory, Azure Analysis Services  
+Российские аналоги: Yandex Data Processing, Yandex Data Streams, Yandex Data Transfer, Yandex DataLens    
+Инструменты разработки: Azure Container Registry  
+Российские аналоги: Yandex Container Registry  
 
 ### Немного о некоторых из сервисов
 Azure Virtual Machines - предоставляет виртуальные серверы.  

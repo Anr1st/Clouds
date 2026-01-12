@@ -50,22 +50,22 @@ Compute  | Compute        | Amazon EKS   | Fargate          | vCPU hours
 6. Заполняем иерархию.
 
 ### Сервисы
-Вычислительные: Amazon Elastic Compute Cloud (EC2), AWS Lambda, Amazon Lightsail  
-Российские аналоги: Яндекс Облако, VK Cloud, СберОблако  
+Вычислительные: Amazon Elastic Compute Cloud (EC2), AWS Lambda  
+Российские аналоги: Yandex Compute Cloud, Yandex Cloud Functions  
 Хранилища: Amazon S3, Amazon EFS  
-Российские аналоги: Яндекс Облако, VK Cloud, Selectel  
-Базы данных: Amazon DynamoDB, Amazon ElastiCache, Amazon DocumentDB  
-Российские аналоги: Яндекс Облако, VK Cloud, Selectel  
+Российские аналоги: VK Object Storage, Yandex Compute Cloud  
+Базы данных: Amazon ElastiCache, Amazon DocumentDB  
+Российские аналоги: VK Cloud Databases, Yandex Managed Service for MongoDB  
 Сеть: Amazon VPC, Amazon Route 53  
-Российские аналоги: Яндекс Облако, VK Cloud, MTS Cloud  
-ИИ и ML: Amazon Machine Learning, Amazon Polly, Amazon Translate, Amazon Transcribe, Amazon Personalize  
-Российские аналоги: Сбер AI  
-Безопасность: Amazon Detective, Amazon Inspector, Amazon GuardDuty  
-Российские аналоги: Яндекс Облако, UserGate  
+Российские аналоги: VK Cloud Networks, Yandex Cloud DNS   
+ИИ и ML: Amazon Machine Learning    
+Российские аналоги: Cloud․ru ML Space  
+Безопасность: Amazon Inspector, Amazon GuardDuty  
+Российские аналоги: Yandex Cloud Security: Yandex Smart Web Security, Yandex Cloud Detection and Response, Yandex Security Deck   
 Аналитика: Amazon Redshift, Amazon Elasticsearch Service, Amazon Kinesis  
-Российские аналоги: Яндекс Облако, VK Cloud  
-Инструменты разработки: AWS CodePipeline, AWS CodeBuild, AWS X-Ray  
-Российские аналоги: Яндекс Облако  
+Российские аналоги: Yandex Managed Service for ClickHouse, Yandex Managed Service for Elasticsearch, Yandex Data Streams  
+Инструменты разработки: AWS CodePipeline, AWS CodeBuild   
+Российские аналоги: Yandex Cloud Toolbox  
 
 ### Немного о некоторых из сервисов
 Amazon Elastic Compute Cloud (EC2) - сервис виртуальных серверов в AWS с полным контролем над конфигурацией.  
